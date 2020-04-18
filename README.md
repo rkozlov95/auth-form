@@ -1,15 +1,16 @@
-## auth-form 
+# auth-form 
 
+[![github action status](https://github.com/rkozlov95/auth-form/workflows/master/badge.svg)](https://github.com/auth-form/actions)
 
-### Build and run
+## Build and run
 
-```
-make build-and-run
+```sh
+$ make build-and-run
 ```
 
 after...
 
-### Try opening in a browser 
+## Try opening in a browser 
 
 Phpmyadmin: [http://localhost:8084](http://localhost:8084)
 
