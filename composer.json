@@ -8,12 +8,14 @@
         }
     ],
     "scripts": {
+        "phpcs": "phpcs",
         "post-package-install": [
             "cp -R ./vendor/twbs/bootstrap/dist/css/bootstrap.min.css /var/www/html/"
         ]
     },
     "require": {
-        "twbs/bootstrap": "*"
+        "twbs/bootstrap": "*",
+        "twig/twig":"^3.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
