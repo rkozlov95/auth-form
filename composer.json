@@ -10,7 +10,7 @@
     "scripts": {
         "phpcs": "phpcs",
         "post-package-install": [
-            "cp -R ./vendor/twbs/bootstrap/dist/css/bootstrap.min.css /var/www/html/"
+            "cp -R ./vendor/twbs/bootstrap/dist/css/bootstrap.min.css ./"
         ]
     },
     "require": {

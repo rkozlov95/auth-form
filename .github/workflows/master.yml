@@ -17,5 +17,8 @@ jobs:
     - name: Build-and-run
       run: make build-and-run
 
+    - name: Install
+      run: make install
+
     - name: Check lint
       run: make lint
