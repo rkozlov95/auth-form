@@ -1,7 +1,7 @@
 version: "3.1"
 services:
     www:
-        build: ./
+        build: .
         ports:
             - "8001:80"
         volumes:
@@ -24,12 +24,6 @@ services:
             - ./dump:/docker-entrypoint-initdb.d
             - ./conf:/etc/mysql/conf.d
             - persistent:/var/lib/mysql
-        networks:
-            - default
-    composer:
-        image: composer:latest
-        volumes:
-            - ./www:/var/www/html
         networks:
             - default
     phpmyadmin:

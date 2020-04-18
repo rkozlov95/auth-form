@@ -1,17 +1,10 @@
 <?php
 
-$autoloadPath1 = __DIR__ . '/../../../autoload.php';
-$autoloadPath2 = __DIR__ . '/vendor/autoload.php';
-if (file_exists($autoloadPath1)) {
-    require_once $autoloadPath1;
-} else {
-    require_once $autoloadPath2;
-}
+require_once __DIR__ . '/../vendor/autoload.php';
 
 ?>
 
-
-<link href="/public/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap.min.css">
 
 <div class="container">
   <h1 class="text-center">Simple authorization form</h1>
@@ -28,3 +21,4 @@ if (file_exists($autoloadPath1)) {
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+
