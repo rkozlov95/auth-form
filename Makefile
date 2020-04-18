@@ -3,4 +3,4 @@ build-and-run:
 run-mysql:
 	docker-compose exec db mysql -u root -p
 lint:
-	composer run-script phpcs -- --standard=PSR12 www
+	composer run-script phpcs -- --standard=PSR12 html
