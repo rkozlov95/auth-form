@@ -5,4 +5,4 @@ run-mysql:
 install:
 	composer install
 lint:
-	composer run-script phpcs -- --standard=PSR12 html
+	composer phpcs www
