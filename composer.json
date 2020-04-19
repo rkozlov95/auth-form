@@ -13,6 +13,11 @@
             "cp -R ./vendor/twbs/bootstrap/dist/css/bootstrap.min.css ./"
         ]
     },
+    "autoload": {
+      "psr-4": {
+        "Auth\\Form\\": "www"
+      }
+    },
     "require": {
         "twbs/bootstrap": "*",
         "twig/twig":"^3.0"

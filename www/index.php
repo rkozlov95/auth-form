@@ -8,4 +8,17 @@ use Twig\Loader\FilesystemLoader;
 $loader = new FilesystemLoader(__DIR__ . '/templates');
 $twig = new Environment($loader);
 
-echo $twig->render('index.html.twig');
+$request = $_SERVER['REQUEST_URI'];
+
+// routing
+switch ($request) {
+    case '/':
+        echo $twig->render('index.html.twig');
+        break;
+    case '/register':
+        echo $twig->render('register.html.twig');
+        break;
+    default:
+        echo $twig->render('index.html.twig');
+        break;
+}
