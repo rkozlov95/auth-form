@@ -1,6 +1,6 @@
 # auth-form 
 
-[![github action status](https://github.com/rkozlov95/auth-form/workflows/master/badge.svg)](https://github.com/auth-form/actions)
+[![github action status](https://github.com/rkozlov95/auth-form/workflows/master/badge.svg)](https://github.com/rkozlov95/auth-form/actions)
 
 ## Build and run
 
