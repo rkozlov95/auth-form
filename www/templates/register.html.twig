@@ -4,28 +4,30 @@
 
 {% block head %}Registration{% endblock %}
 
-{% block body %}
+{% block form %}
 
-<div class="form-group">
-  <label>E-mail</label>
-  <input type="text" class="form-control" placeholder="">
-</div>
-<div class="form-group">
-  <label>Password</label>
-  <input type="text" class="form-control" placeholder="">
-</div>
-<div class="form-group">
-  <label>Repeat password</label>
-  <input type="text" class="form-control" placeholder="">
-</div>
-<div class="form-group">
-  <label for="exampleFormControlTextarea3">About yourself</label>
-  <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
-</div>
-<div class="form-group">
-  <label>Add your photo</label>
-  <input type="file" class="form-control-file" id="exampleFormControlFile1">
-</div>
-<button type="submit" class="btn btn-primary btn-lg">Done</button>
+<form action="" class="justify-content-center">
+  <div class="form-group">
+    <label>E-mail</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Repeat password</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea3">About yourself</label>
+    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Add your photo</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg">Done</button>
+</form>
 
 {% endblock %}

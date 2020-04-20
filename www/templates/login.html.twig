@@ -4,16 +4,18 @@
 
 {% block head %}Sing in{% endblock %}
 
-{% block body %}
+{% block form %}
 
-<div class="form-group">
-  <label>E-mail</label>
-  <input type="text" class="form-control" placeholder="">
-</div>
-<div class="form-group">
-  <label>Password</label>
-  <input type="text" class="form-control" placeholder="">
-</div>
-<button type="submit" class="btn btn-primary btn-lg">Log in</button>
+<form action="" class="justify-content-center">
+  <div class="form-group">
+    <label>E-mail</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="text" class="form-control" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg">Log in</button>
+</form>
 
 {% endblock %}
