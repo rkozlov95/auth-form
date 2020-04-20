@@ -20,7 +20,8 @@
     },
     "require": {
         "twbs/bootstrap": "*",
-        "twig/twig":"^3.0"
+        "twig/twig":"^3.0",
+	"php": "^7.2.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*"

@@ -1,18 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Registration{% endblock %}
 
-{% block head %}Enter data{% endblock %}
+{% block head %}Registration{% endblock %}
 
 {% block body %}
 
 <div class="form-group">
-  <label>Login</label>
-  <input type="text" class="form-control" placeholder="Jane Doe">
+  <label>E-mail</label>
+  <input type="text" class="form-control" placeholder="">
 </div>
 <div class="form-group">
-  <label>E-mail</label>
-  <input type="text" class="form-control" placeholder="jane.doe@example.com">
+  <label>Password</label>
+  <input type="text" class="form-control" placeholder="">
+</div>
+<div class="form-group">
+  <label>Repeat password</label>
+  <input type="text" class="form-control" placeholder="">
 </div>
 <div class="form-group">
   <label for="exampleFormControlTextarea3">About yourself</label>
