@@ -18,6 +18,9 @@ switch ($request) {
     case '/register':
         echo $twig->render('register.html.twig');
         break;
+    case '/login':
+        echo $twig->render('login.html.twig');
+        break;
     default:
         echo $twig->render('index.html.twig');
         break;
