@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Information{% endblock %}
+
+{% block head %}Information{% endblock %}
+
+{% block form %}
+
+<form class="justify-content-center">
+  <div>
+    <div>E-mail: {{ email }}</div>
+    <div>Password: {{ password }}</div>
+    <div>About: {{ about }}</div>
+    <div>Image: {{ image }}</div>
+  </div>
+</form>
+{% endblock %}

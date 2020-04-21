@@ -5,4 +5,4 @@ run-mysql:
 install:
 	composer install
 lint:
-	composer phpcs www
+	composer run-script phpcs www

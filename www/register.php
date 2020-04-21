@@ -5,7 +5,6 @@ require_once 'index.php';
 $connect = mysqli_connect('db', 'user', 'test', 'myDb');
 
 $errorMessage = '';
-$successMessage = '';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -31,14 +30,19 @@ if ($email == '' || $password == '' || $password2 == '' || $about == '' || $imag
      echo $twig->render('register.html.twig', array_merge($params, ['errorMessage' => $errorMessage]));
 }
 
-$query = "INSERT INTO User (email, password, about, image) VALUES ('$email','$password', '$about', '$image')";
-
-$result = mysqli_query($connect, $query);
-
-if ($result) {
-    echo "Информация занесена в базу данных";
-} else {
-    echo "Информация не занесена в базу данных";
+if ($isValid && ($stmt = $connect->prepare('SELECT id, password FROM User WHERE email = ?'))) {
+    $stmt->bind_param('s', $_POST['email']);
+    $stmt->execute();
+    $stmt->store_result();
+    if ($stmt->num_rows > 0) {
+        $errorMessage = 'Email exists, please choose another!';
+        echo $twig->render('register.html.twig', array_merge($params, ['errorMessage' => $errorMessage]));
+    } elseif ($isValid) {
+        $query = "INSERT INTO User (email, password, about, image) VALUES ('$email','$password', '$about', '$image')";
+        $result = mysqli_query($connect, $query);
+        echo $twig->render('info.html.twig', $params);
+    }
+    $stmt->close();
 }
 
 mysqli_close($connect);
