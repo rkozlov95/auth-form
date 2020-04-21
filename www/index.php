@@ -21,7 +21,4 @@ switch ($request) {
     case '/login':
         echo $twig->render('login.html.twig');
         break;
-    default:
-        echo $twig->render('index.html.twig');
-        break;
 }
